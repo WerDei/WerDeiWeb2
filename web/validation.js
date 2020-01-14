@@ -132,7 +132,7 @@ function sendPointFromGraph(event)
         var x = Number(((event.pageX - window.pageXOffset - rect.x - canvas.width/2)/pixelsPerUnit).toFixed(2));
         var y = Number((-(event.pageY - window.pageYOffset - rect.y - canvas.height/2)/pixelsPerUnit).toFixed(2));
 
-        if(x>=-5 && x<=5 && y>=-5 && y<=3){
+        if(x>=-5 && x<=5 && y>=-5 && y<=5){
             sendPointRequest(x, y, valueR, true)
         }
     }

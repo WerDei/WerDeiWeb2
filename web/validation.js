@@ -8,7 +8,7 @@ var valueR;
 function init()
 {
     checkYValue();
-    checkRValue();
+    checkRValue(false);
 
     drawGraph();
 
@@ -63,7 +63,7 @@ function checkYValue()
     AllowSendingIfValidInputs();
 }
 
-function checkRValue()
+function checkRValue(tableSend)
 {
     var checkboxes = document.getElementsByName("value_r");
 
@@ -94,7 +94,8 @@ function checkRValue()
         document.getElementById("form_value_r_display").innerHTML = "";
         valueValidR = true;
         drawHitArea(valueR);
-        sendPointsFromTable(false);
+
+        if(tableSend) sendPointsFromTable(false);
     }
 
     AllowSendingIfValidInputs();
@@ -122,7 +123,7 @@ function sendPointFromForm()
 function sendPointFromGraph(event)
 {
 
-    checkRValue();
+    checkRValue(false);
 
     if(valueValidR){
         var canvas = document.getElementById("pointCanvas");

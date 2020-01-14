@@ -83,23 +83,23 @@
             <span class="checkboxes">
                     <span>
                         1<br>
-                        <input type="radio" name="value_r" value="1" onclick="checkRValue()">
+                        <input type="radio" name="value_r" value="1" onclick="checkRValue(true)">
                     </span>
                     <span>
                         1.5<br>
-                        <input type="radio" name="value_r" value="1.5" onclick="checkRValue()">
+                        <input type="radio" name="value_r" value="1.5" onclick="checkRValue(true)">
                     </span>
                     <span>
                         2<br>
-                        <input type="radio" name="value_r" value="2" onclick="checkRValue()">
+                        <input type="radio" name="value_r" value="2" onclick="checkRValue(true)">
                     </span>
                     <span>
                         2.5<br>
-                        <input type="radio" name="value_r" value="2.5" onclick="checkRValue()">
+                        <input type="radio" name="value_r" value="2.5" onclick="checkRValue(true)">
                     </span>
                     <span>
                         3<br>
-                        <input type="radio" name="value_r" value="3" onclick="checkRValue()">
+                        <input type="radio" name="value_r" value="3" onclick="checkRValue(true)">
                     </span>
             </span>
             <span class="errormessage" id="form_value_r_display"></span> <br>
